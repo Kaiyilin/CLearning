@@ -9,8 +9,7 @@
 // double, 64 bit
 
 
-int main()
-{
+int main(){
     float fahr, cel; // declare variable and data types
     int start_point, stepsize, endpoint; 
     start_point = 0;

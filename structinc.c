@@ -29,16 +29,30 @@ typedef struct{
     char *number;
 } person;
 
+// another example of struct
+
+typedef struct{
+    int red;
+    int green;
+    int blue;
+} pixel;
 
 
 int main(void){
     person people[2];
+    pixel imgs[2];
 
     people[0].name = "Carter";
     people[0].number = "+1-617-495-1000";
 
     people[1].name = "David";
     people[1].number = "+1-949-468-2750";
+
+    imgs[0].red = 255;
+    imgs[0].green = 255;
+    imgs[0].blue = 255;
+    
+    printf("Red val: %i \n", imgs[0].red);
 
     for (int i = 0; i < 2; i++){
         if (strcmp(people[i].name, "David") == 0){
@@ -51,12 +65,5 @@ int main(void){
 
 }
 
-/*
-// another example of struct
 
-typedef struct pixel{
-    int red;
-    int green;
-    int blue;
-} pixel;
-*/
+
